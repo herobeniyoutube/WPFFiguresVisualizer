@@ -1,0 +1,31 @@
+﻿<Window x:Class="WPFFiguresVisualizer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFFiguresVisualizer"
+        
+           xmlns:col="clr-namespace:System.Collections;assembly=mscorlib"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        
+        mc:Ignorable="d"
+        Title="FiguresWPF" Height="450" Width="800">
+
+    <Grid>
+        <WrapPanel Orientation="Vertical" x:Name="ToolBar">
+
+            <Button x:Name="Square" Content="Square" Click="ShowFigure" />
+            <Button x:Name="Circle" Content="Circle" Click="ShowFigure" />
+            <Button x:Name="Rectangle" Content="Rectangle" Click="ShowFigure"/>
+            <Button x:Name="Triangel" Content="Triangel" Click="ShowFigure"/>
+            <Button x:Name="Ellipse" Content="Ellipse" Click="ShowFigure"/>
+            <Button x:Name="ClearFigureButton"  Content="Clear" Click="HideCircle" />
+
+        </WrapPanel>
+        <Canvas x:Name="FigurePlaceholder">
+            
+        </Canvas>
+
+    </Grid>
+
+</Window>
